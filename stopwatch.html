@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"  href="port3.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> stop watch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html"> <button>CLOCK</button></a>
+    <a href="timer.html"> <button>TIMER</button></a>
+   </div>
+  <div class="date">dd/mm/yy</div>    
+<div class="box1">
+  <div class="box">
+        <div class="hours">
+        Hrs :
+        <span id="hr">00 :</span>
+    </div>
+    <div class="min">
+        Min :
+        <span id="min">00 :</span>
+    </div>
+    <div class="sec">
+      Sec  
+        <span id="sec">00 </span>
+    </div>
+   
+  </div>
+  <nav>
+    <button id="stop" onclick="stop()">STOP</button>
+    <button id="start" onclick="start()">START</button>
+    <button id="mark" onclick="reset()">RESET</button>
+   </nav>
+  
+</div>
+
+    <script src="stopwatch.js"></script>
+
+    
+</body>
+</html>

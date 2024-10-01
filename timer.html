@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Timer</title>
+    <link rel="icon"  href="port3.png" />
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+  <div class="nav">
+    <a href="index.html"> <button>CLOCK</button></a>
+    <a href="stopwatch.html"> <button>STOP WATCH</button></a>
+   </div>
+  <div class="date">dd/mm/yy</div>    
+<div class="box1">
+  <div class="box">
+        <div class="hours">
+        Hrs :
+        <input type="number" id="hr" value="00" min="0" max="23">
+    </div>
+    <div class="min">
+        Min :
+        <input type="number" id="min" value="00" min="0" max="59">
+    </div>
+    <div class="sec">
+      Sec  
+      <input type="number" id="sec" value="00" min="0" max="59">
+    </div>
+
+  </div>
+  <div class="div"><span id="timer">00:00:00</span></div>
+  <nav>
+    <button id="stop" onclick="stop()" >STOP</button>
+    <button id="start"  >START</button>
+    <button id="mark" onclick="reset()" >RESET</button>
+   </nav>
+  
+</div>
+
+    <script src="timer.js"></script>
+
+    
+</body>
+</html>

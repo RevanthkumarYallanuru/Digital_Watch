@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Timer</title>
+  <style>
+    #timer {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Digital Timer</h1>
+  <input type="number" id="hours" value="0" min="0" max="23"> hours
+  <input type="number" id="minutes" value="0" min="0" max="59"> minutes
+  <button id="start-btn">Start Timer</button>
+  <div id="timer">00:00</div>
+
+  <script>
+    let timerId = null;
+    let startTime = 0;
+    let endTime = 0;
+
+    document.getElementById("start-btn").addEventListener("click", startTimer);
+
+    function startTimer() {
+      let hours = parseInt(document.getElementById("hours").value);
+      let minutes = parseInt(document.getElementById("minutes").value);
+      startTime = hours * 60 * 60 * 1000 + minutes * 60 * 1000;
+      endTime = startTime;
+      timerId = setInterval(countdown, 1000);
+    }
+
+    function countdown() {
+      let currentTime = new Date().getTime();
+      endTime = endTime -1;
+      let timeLeft = endTime;
+      let hours = Math.floor(timeLeft / (60 * 60 * 1000));
+      let minutes = Math.floor((timeLeft % (60 * 60 * 1000)) / (60 * 1000));
+      let seconds = Math.floor((timeLeft % (60 * 1000)) / 1000);
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      document.getElementById("timer").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+      if (timeLeft <= 0) {
+        clearInterval(timerId);
+        alert("Your time is up!");
+      }
+    }
+  </script>
+</body>
+</html>

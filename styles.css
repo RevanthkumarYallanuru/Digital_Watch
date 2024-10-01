@@ -1,0 +1,147 @@
+*
+{
+    font-family: sans-serif;
+    font-weight: bold;
+   
+  
+}  
+.date
+{
+    display: flex;
+    justify-content: center;
+    background-color: #00DBDE;
+    background-image: linear-gradient(40deg, #00DBDE 0%, #FC00FF 100%);
+     margin: 10px auto 00px;
+    align-items: center;
+    border-radius: 30px;
+    width: 300px;
+    height: 25px;
+    color: beige;
+    font-style:bold;
+    font-size: large;
+}  
+.box1
+{
+    width: 400px;
+    height: 40vh;
+    max-height: 100vh;
+    background-color: #00DBDE;
+    background-image: linear-gradient(40deg, #00DBDE 0%, #FC00FF 100%);
+    margin: -30px auto 20px;
+    align-items: center;
+    border-radius: 30px;
+}
+.box1 nav
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 20px;
+  margin-top: -5px;
+}
+
+.box1 nav button
+{
+    background: transparent;
+    border-radius: 30px;
+    width: 80px;
+    height: 30px;
+    font: bold;
+    color: beige;
+    
+}
+
+.box
+{
+    width: 300px;
+    height: 20vh;
+    margin: 00px auto 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: whitesmoke;
+   padding: 30px;
+    align-items: center;
+    border-radius: 30px;
+}
+.hours
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+.hours span
+{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.min
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+.min span
+{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.sec
+{ display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+.sec span
+{
+    margin-top: 10px;
+    font-size: 40px;
+}
+.sts
+
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 30px;
+
+}
+.sts span
+{
+    margin-top: 3%;
+    font-size: 40px;
+}
+.nav
+{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #00DBDE;
+    background-image: linear-gradient(40deg, #00DBDE 0%, #FC00FF 100%);
+    margin: 90px auto 5px;
+    align-items: center;
+    border-radius: 20px;
+    width: 350px;
+   
+    color: beige;
+    font-style:bold;
+    font-size: large;
+    height: 30px;
+}
+.nav a button
+{
+    background: transparent;
+    border-radius: 30px;
+    width: 120px;
+    height: 20px;
+    font: bold;
+    color: beige;
+}
